@@ -1,0 +1,290 @@
+/* Body styling */
+body {
+    background-color: rgb(255, 253, 249); /* Bakgrundsfärg för hela sidan */
+    background-size: cover; /* Täcker hela sidan med bakgrundsbilden */
+    margin: 0; /* Eliminerar standardmarginaler för body-elementet */
+    overflow: auto; /* Lägg till scrollbar vid behov */
+    display: flex; /* Gör body till en flex-container */
+    flex-direction: column; /* Lägg till flex-direction: column för att placera element i en kolumn */
+    align-items: center; /* Centrerar innehållet vertikalt */
+    height: 100vh; /* Sätter höjden på sidan till 100% av vyhöjden */
+    font-family: 'Times New Roman', Times, serif; /* Times New Roman som fallback-font */
+}
+
+/* Styling för länken i rubriken */
+nav ul li.current-page a {
+    text-decoration: underline; /* Understrykning för den aktuella sidan */
+}
+
+/* Navigation styling */
+nav {
+    position: relative; /* Gör navigationsraden relativt positionerad för att hantera logotypens position */
+}
+
+nav ul {
+    list-style-type: none; /* Tar bort standardlist-stilen för ul */
+    margin: 0; /* Eliminerar standardmarginaler för ul-elementet */
+    padding: 0; /* Eliminerar standardutfyllnad för ul-elementet */
+}
+
+nav ul li {
+    display: inline-block; /* Gör varje listelement till en inline-block för att placera dem bredvid varandra */
+    margin: 20px; /* Lägger till mellanrum mellan länkarna */
+}
+
+nav ul li a {
+   
+    color:#f86fcb; /* Sätter färgen på länktext till svart */
+    text-decoration: none; /* Tar bort standard understrykning för länkar */
+    padding: 8px; /* Lägger till utfyllnad runt länkarna */
+}
+
+nav ul li a:hover {
+    border: 2px solid #f86fcb;
+}
+.logoname img {
+    margin-top: 20px;
+    width: 450px;
+}
+/* Main styling */
+main {
+    text-align: center; /* Centrerar texten i main */
+}
+hr {
+    border-top: 3px solid #000000;
+    width: 100%;
+}
+.current-page {
+    color: #ff29b8;
+    border: 2px solid #ff29b8; /* Lägg till kant runt den aktuella sidan */
+}
+
+/* Om mig sidan */
+.containerabout {
+    margin-top: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .text-container h1 {
+    margin-top: -150px;
+    font-size: 30px;
+  }
+  .text-container p {
+    font-style: italic;
+    font-size: 26px;
+    margin-bottom: 60px;
+  }
+  
+  .button-link {
+    padding: 20px 30px; /* Lägg till padding för att definiera knappens storlek */
+    background-color: #ffb115; /* Ange bakgrundsfärg för knappen */
+    color: rgb(0, 0, 0); /* Ange textfärg för knappen */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 100px; /* Avrunda kanterna på knappen */
+    cursor: pointer; /* Visa pekaren som en hand när användaren hovrar över knappen */
+    text-decoration: none;
+    white-space: nowrap; /* Förhindra att texten bryts över flera rader */
+  }
+  
+  .button-link:hover {
+    background-color: #fa9def; /* Ändra bakgrundsfärgen när användaren hovrar över knappen */
+  }
+  
+  .containerabout img {
+   width: 400px;
+  }
+  /* Lite om mig */
+  .aboutme {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .aboutme img {
+    margin-top: 90px;
+    margin-left: -50px;
+    width: 60px; /* Justera efter behov */
+  }
+  .aboutme h2 {
+    border:2px solid #fec4f2; /* Ange stilen på linjen */
+    width: 190px;
+    background-color: #fec4f2;
+  }
+  .text1-container  {
+    font-size: 20px;
+    margin-top: -220px;
+    margin-right: 120px;
+    z-index: 1;
+  }
+  /* mina intressen */
+  .circle {
+    display: inline-block;
+    text-align: center;
+    margin: 30px;
+  }
+  .intresse h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .circle img {
+    width: 100px; /* Justera storleken efter behov */
+    border-radius: 50%; /* Gör bilden rund */
+  }
+  
+  .circle p {
+    font-size: 20px;
+    margin-top: 10px; /* Avstånd mellan ikon och text */
+    margin-bottom: 100px;
+  }
+  
+/* CV sidan */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header ul li {
+    margin-bottom: 5px;
+  }
+  
+  section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .education-box {
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 10px 10px 1px rgb(252, 164, 208); /* Rosa skugga med full opacitet */
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+  .education-box i {
+    font-size: 22px;
+    color: #f54de2;
+  }
+  .experience-box {
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 10px 10px 1px rgb(255, 231, 125); /* Rosa skugga med full opacitet */
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+  /* Styla ikonerna */
+.contact-info {
+    font-size: 18px; /* Justera ikonstorleken efter behov */
+    color: #000000; /* Justera ikonfärgen efter behov */
+    margin-right: 10px; /* Justera avståndet mellan ikonerna efter behov */
+  }
+  
+  .contact-box {
+    display: flex;
+    align-items: center; /* Centrera elementen vertikalt */
+    justify-content: center; /* Centrera elementen horisontellt */
+    flex-wrap: wrap; /* Låt flexobjekten ombrytas vid behov */
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 10px 10px 1px rgb(255, 118, 118); /* Rosa skugga med full opacitet */
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .contact-box ul {
+    list-style-type: none;
+  }
+  .contact-box i {
+    color: #ff2929;
+    font-size: 23px;
+  }
+  .contact-box ul ul {
+    margin-top: 10px;
+  }
+  .contact-info {
+    display: inline-flex; /* Använd Flexbox */
+    align-items: center; /* Centrera vertikalt */
+    margin-right: 20px; /* Lägg till marginal till höger för att separera elementen */
+}
+.skills-box {
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 10px 10px 1px rgb(111, 208, 250); /* Rosa skugga med full opacitet */
+    padding: 10px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center; /* Centrera elementen vertikalt */
+    justify-content: center; /* Centrera elementen horisontellt */
+    flex-wrap: wrap; /* Låt flexobjekten ombrytas vid behov */
+}
+
+.skill-item {
+    display: flex;
+    align-items: center; /* Centrera elementen vertikalt */
+    margin-right: 9%; /* Lägg till procentuell marginal mellan varje logotyp och punkt */
+}
+
+
+.logo {
+    width: 30px; /* Justera logotypens storlek efter behov */
+    height: 30px;
+    margin-right: 10px; /* Lägg till marginal till höger för att separera logon från texten */
+}
+
+/* portfolio */
+
+.portfolio {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+.portfolio h1 {
+    font-size: 30px;
+}
+.portfolio p {
+    font-size: 20px;
+}
+.project-container {
+    margin-top: 90px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between; /* Placerar projekten med mellanrum mellan dem */
+}
+.project1 img {
+    width: 350px;
+    transition: transform 0.3s ease; /* Lägg till övergång för smidig förstoringsanimation */
+}
+.project2 img {
+    width: 350px;
+    transition: transform 0.3s ease; /* Lägg till övergång för smidig förstoringsanimation */
+}
+.project1 img:hover,
+.project2 img:hover {
+    transform: scale(1.1); /* Förstora bilden med 10% när man hovrar över den */
+}
